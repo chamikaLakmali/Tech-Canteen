@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 1, 2021 10:29:44 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="StudentNstaffPojos.Buylist" table="buylist" catalog="techcanteen" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="userId" type="string">
+            <column name="userId" length="15" not-null="true" />
+        </property>
+        <property name="itmId" type="int">
+            <column name="itmId" not-null="true" />
+        </property>
+        <property name="type" type="string">
+            <column name="type" length="1" not-null="true" />
+        </property>
+        <property name="price" type="float">
+            <column name="price" precision="12" scale="0" not-null="true" />
+        </property>
+        <property name="quantity" type="int">
+            <column name="quantity" not-null="true" />
+        </property>
+        <property name="subTotal" type="float">
+            <column name="subTotal" precision="12" scale="0" not-null="true" />
+        </property>
+        <property name="addedDate" type="timestamp">
+            <column name="addedDate" length="19" />
+        </property>
+    </class>
+</hibernate-mapping>

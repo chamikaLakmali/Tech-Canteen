@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 1, 2021 10:29:44 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="StudentNstaffPojos.Orders" table="orders" catalog="techcanteen" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="orderId" type="int">
+            <column name="orderId" not-null="true" />
+        </property>
+        <property name="userId" type="string">
+            <column name="userId" length="15" not-null="true" />
+        </property>
+        <property name="orderedDate" type="timestamp">
+            <column name="orderedDate" length="19" not-null="true" />
+        </property>
+        <property name="deliveryRequirement" type="string">
+            <column name="DeliveryRequirement" length="3" not-null="true" />
+        </property>
+        <property name="deliveryLocation" type="string">
+            <column name="deliveryLocation" />
+        </property>
+        <property name="dateToBeDelivered" type="string">
+            <column name="dateToBeDelivered" length="200" />
+        </property>
+        <property name="orderStatus" type="string">
+            <column name="orderStatus" length="15" not-null="true" />
+        </property>
+        <property name="total" type="java.lang.Float">
+            <column name="total" precision="12" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>
