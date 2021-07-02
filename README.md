@@ -1,2 +1,2 @@
-# Tech-Canteen
-Faculty of Technology food ordering system
+# TechCanteen
+ Food ordering system for Faculty of Technology
