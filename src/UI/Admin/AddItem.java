@@ -35,7 +35,7 @@ import org.hibernate.Transaction;
 
 /**
  *
- * @author Chamika
+ * @author Ishan
  */
 public class AddItem extends javax.swing.JFrame {
     String path;
