@@ -19,7 +19,7 @@ import org.hibernate.Session;
 
 /**
  *
- * @author Chamika
+ * @author Ishan
  */
 public class UserList extends javax.swing.JFrame {
 
