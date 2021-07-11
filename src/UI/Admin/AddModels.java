@@ -20,7 +20,7 @@ import org.hibernate.Transaction;
 
 /**
  *
- * @author Chamika
+ * @author Ishan
  */
 public class AddModels extends javax.swing.JFrame {
 
