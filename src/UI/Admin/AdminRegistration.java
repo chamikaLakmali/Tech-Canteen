@@ -19,7 +19,7 @@ import org.hibernate.Transaction;
 
 /**
  *
- * @author Chamika
+ * @author Ishan
  */
 public class AdminRegistration extends javax.swing.JFrame {
     int status=1;
