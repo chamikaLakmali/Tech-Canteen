@@ -19,7 +19,7 @@ import org.hibernate.Transaction;
 
 /**
  *
- * @author Chamika
+ * @author Ishan
  */
 public class Login extends javax.swing.JFrame {
 
